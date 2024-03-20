@@ -1,3 +1,0 @@
-/home/milosz/CppProjects/MazeProject/cmake-build-debug/CMakeFiles/MazeProject.dir
-/home/milosz/CppProjects/MazeProject/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/milosz/CppProjects/MazeProject/cmake-build-debug/CMakeFiles/rebuild_cache.dir
