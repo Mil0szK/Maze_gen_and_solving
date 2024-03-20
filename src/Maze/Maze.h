@@ -11,7 +11,13 @@ enum State {Blocked, Passage};
 // Define the structure of a cell
 struct Cell {
     int x, y; // The coordinates of the cell
+
     State state; // The state of the cell (either Blocked or Passage)
+
+    // Default constructor
+    Cell() : x(0), y(0), state(Blocked) {}
+
+    Cell(int x, int y, State state) : x(x), y(y), state(state) {}
 
     // Overload the less-than operator to compare cells based on their coordinates
     bool operator<(const Cell& other) const;
@@ -45,8 +51,21 @@ public:
     // Find the escape cell of the maze
     Cell findEscapeCell();
 
+    // get a cell from the grid
+    Cell& getCell(int x, int y) {
+        return grid[y][x];
+    }
+
+    // set a cell in the grid
+    void setCell(int x, int y, const Cell& cell) {
+        grid[y][x] = cell;
+    }
+
     // Print the maze
     void print(std::ostream& os);
+
+    int getWidth() const { return width; }
+    int getHeight() const { return height; }
 
 private:
     int width; // The width of the maze
