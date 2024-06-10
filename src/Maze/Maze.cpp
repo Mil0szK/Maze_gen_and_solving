@@ -1,14 +1,6 @@
 #include "Maze.h"
-#include <iostream>
-#include <vector>
 #include <random>
-#include <set>
 #include <algorithm>
-#include <future>
-#include <chrono>
-#include <thread>
-#include <cstdlib>
-#include <cstdio>
 
 bool Cell::operator<(const Cell& other) const {
     if (x == other.x) {

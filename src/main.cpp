@@ -10,7 +10,13 @@
 
 int main() {
 
-    Maze maze1(80, 40);
+    int width, height;
+    std::cout << "Give width of maze (min 15): \n";
+    std::cin >> width;
+    std::cout << "Give height of maze (min 15): \n";
+    std::cin >> height;
+
+    Maze maze1(width, height);
 
     maze1.generate(); // Generate the maze
 

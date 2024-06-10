@@ -10,6 +10,8 @@ OBJS3  = src/$(NAME3).o
 
 CFLAGS = -Wall -std=c++11 -pedantic -O -fPIC -Wno-sign-compare
 LDFLAGS = -Wall -std=c++11 -pedantic -O
+TEST_OBJ_FILE1 = tests/MazeSolver/$(NAME4).o
+TEST_OBJ_FILE2 += tests/Maze/$(NAME5).o
 
 CO = g++
 LD = $(CO)
